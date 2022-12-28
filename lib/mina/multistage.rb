@@ -20,7 +20,7 @@ def _file_for_stage(stage_name)
 end
 
 def _stage_file_exists?(stage_name)
-  File.exists?(File.expand_path(_file_for_stage(stage_name)))
+  File.exist?(File.expand_path(_file_for_stage(stage_name)))
 end
 
 def _get_all_stages
